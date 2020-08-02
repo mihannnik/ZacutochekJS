@@ -2,7 +2,7 @@
 
 // @name         LobbyOpener(3)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 
 // @match        shenpoker.com/game/idnpok*
 
@@ -41,7 +41,7 @@
 
 	GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
     GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
-
+//Git
     self.close();
 })();
 
