@@ -2,7 +2,7 @@
 
 // @name         PreSitter(2)
 // @namespace    http://tampermonkey.net/
-// @version      2
+// @version      3
 
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/presitter(2).js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/presitter(2).js#bypass=true
