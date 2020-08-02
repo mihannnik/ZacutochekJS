@@ -2,8 +2,9 @@
 
 // @name         IDNLogIn(1)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-
+// @version      2
+// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/login(1).js#bypass=true
+// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/login(1).js#bypass=true
 // @match        shenpoker.com/
 
 // @grant        shenpoker.com/deposit
