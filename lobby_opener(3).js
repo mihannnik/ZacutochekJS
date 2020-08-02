@@ -40,9 +40,8 @@
 
     GetBalance();
 
-	GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
+    GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
     GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
-//Git
     self.close();
 })();
 
