@@ -2,7 +2,7 @@
 
 // @name         LobbyOpener(3)
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      2
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/lobby_opener(3).js
 // @downloadURL   https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/lobby_opener(3).js
 // @match        shenpoker.com/game/idnpok*
