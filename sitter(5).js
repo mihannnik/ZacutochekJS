@@ -2,7 +2,9 @@
 
 // @name         IDN sitter(5)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      2
+// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
+// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
 
 // @match        http://lobbyidn.com//lobby.php*
 // @match        https://lobbyidn.com//lobby.php*
