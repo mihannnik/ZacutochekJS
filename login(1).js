@@ -2,7 +2,7 @@
 
 // @name         IDNLogIn(1)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      3.3
 
 // @match        shenpoker.com/
 
