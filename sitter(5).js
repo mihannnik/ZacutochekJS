@@ -2,9 +2,7 @@
 
 // @name         IDN sitter(5)
 // @namespace    http://tampermonkey.net/
-// @version      2
-// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
-// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
+// @version      1.0
 
 // @match        http://lobbyidn.com//lobby.php*
 // @match        https://lobbyidn.com//lobby.php*
@@ -34,7 +32,7 @@ var Sits = 9;
         await sleep(5000);
         SetSize();
         await sleep(5000);
-		
+
         if(GetTable() == false)
         {
             await sleep(10000);

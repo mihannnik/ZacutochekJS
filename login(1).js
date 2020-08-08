@@ -2,9 +2,8 @@
 
 // @name         IDNLogIn(1)
 // @namespace    http://tampermonkey.net/
-// @version      2
-// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/login(1).js#bypass=true
-// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/login(1).js#bypass=true
+// @version      1.0
+
 // @match        shenpoker.com/
 
 // @grant        shenpoker.com/deposit
@@ -33,7 +32,7 @@ var password = "";
 function SetUserData()
 {
     var UserInput = document.getElementsByTagName('input');
-	
+
     for(var i=0; i<UserInput.length; ++i)
     {
         if(UserInput[i].name == 'username')
