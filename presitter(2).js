@@ -2,7 +2,10 @@
 
 // @name         PreSitter(2)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      3.3
+
+// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/presitter(2).js#bypass=true
+// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/presitter(2).js#bypass=true
 
 // @match        shenpoker.com/deposit
 
