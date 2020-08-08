@@ -24,10 +24,11 @@
 function OpenIDNPlay()
 {
 	GM_openInTab("http://shenpoker.com/game/idnpoker", 'active');
-    Sleep(100);
+	Sleep(100);
 }
 
 function Sleep(ms)
 {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
+

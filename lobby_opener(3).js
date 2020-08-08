@@ -18,13 +18,13 @@
 (async function()
 {
 	'use strict';
-    await sleep(3000);
+	await sleep(3000);
 	
-    await GetBalance();
-
+	await GetBalance();
+	
 	var gamebtn = document.getElementsByClassName('open-sans play-now-button launchGame');
-
-	for(var i = 0; i< gamebtn.length; i++)
+	
+	for(var i=0; i<gamebtn.length; ++i)
 	{
 		if(gamebtn[i].innerHTML.includes("立即游戏"))
 		{
@@ -34,37 +34,37 @@
 	
 	await sleep(15000);
 	
-    GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
+	GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
 	GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
 	
-    self.close();
+	self.close();
 })();
 
 async function GetBalance()
 {
-    UpdateBalance();
-    await sleep(4000);
-
-    var balance = document.getElementsByClassName('totalWallet initAfterMount');
-
-    for(var i=0; i<3; ++i)
-    {
-        var str = balance[0].innerText;
-
-        if(str.includes("¥"))
-        {
-            GM_setClipboard(str, "text");
-            break;
-        }
-
-        await sleep(2000);
-    }
+	UpdateBalance();
+	await sleep(4000);
+	
+	var balance = document.getElementsByClassName('totalWallet initAfterMount');
+	
+	for(var i=0; i<3; ++i)
+	{
+		var str = balance[0].innerText;
+		
+		if(str.includes("¥"))
+		{
+			GM_setClipboard(str, "text");
+			break;
+		}
+		
+		await sleep(2000);
+	}
 }
 
 function UpdateBalance()
 {
-    var refreshBtn = document.getElementsByClassName('refreshBalance lazy');
-    refreshBtn[0].click();
+	var refreshBtn = document.getElementsByClassName('refreshBalance lazy');
+	refreshBtn[0].click();
 }
 
 function sleep(ms)

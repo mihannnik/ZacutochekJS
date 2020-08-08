@@ -13,6 +13,6 @@
 
 (function()
 {
-    'use strict';
+	'use strict';
 	self.close();
 })();

@@ -23,37 +23,37 @@ var password = "";
 
 (function()
 {
-    'use strict';
-
-    SetUserData();
-    ClickLogin();
+	'use strict';
+	
+	SetUserData();
+	ClickLogin();
 })();
 
 function SetUserData()
 {
-    var UserInput = document.getElementsByTagName('input');
-
-    for(var i=0; i<UserInput.length; ++i)
-    {
-        if(UserInput[i].name == 'username')
-        {
-            UserInput[i].value = username;
-            continue;
-        }
-        else if(UserInput[i].name == 'password')
-        {
-            UserInput[i].value = password;
-        }
-    }
+	var UserInput = document.getElementsByTagName('input');
+	
+	for(var i=0; i<UserInput.length; ++i)
+	{
+		if(UserInput[i].name == 'username')
+		{
+			UserInput[i].value = username;
+			continue;
+		}
+		else if(UserInput[i].name == 'password')
+		{
+			UserInput[i].value = password;
+		}
+	}
 }
 
 function ClickLogin()
 {
-    var loginbtn = document.getElementsByClassName('bg-login');
-
-    for(var j=0; j<loginbtn.length; ++j)
+	var loginbtn = document.getElementsByClassName('bg-login');
+	
+	for(var j=0; j<loginbtn.length; ++j)
     {
-        loginbtn[j].click();
-    }
+		loginbtn[j].click();
+	}
 }
 
