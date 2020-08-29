@@ -13,7 +13,7 @@
     'use strict';
 
     var elem = document.getElementById("d_clip_button").children[0];
-    if(elem.innerText == "217.8.127.18")
+    if(elem.innerText != "217.8.127.18")
     {
     GM_openInTab("http://shenpoker.com/cn");
     }
