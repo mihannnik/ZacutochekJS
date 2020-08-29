@@ -16,6 +16,7 @@
     if(elem.innerText != "217.8.127.18")
     {
     GM_openInTab("http://shenpoker.com/cn");
+        self.close();
     }
 
 })();
