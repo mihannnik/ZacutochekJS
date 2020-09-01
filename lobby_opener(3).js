@@ -34,7 +34,7 @@
 
 	await sleep(17000);
 
-	GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
+	GM_openInTab("http://lobbyidn.com//lobby.php?lang=en", 'active');
 	GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
 
 	self.close();
