@@ -5,7 +5,7 @@
 // @version      3.3
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/lobby_opener(3).js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/lobby_opener(3).js#bypass=true
-// @match        shenpoker.com/game/idnpok*
+// @match        https://shenpoker.com/game/idnpok*
 
 // @grant        GM_openInTab
 // @grant        GM_setClipboard
@@ -19,11 +19,11 @@
 {
 	'use strict';
 	await sleep(3000);
-	
+
 	await GetBalance();
-	
+
 	var gamebtn = document.getElementsByClassName('open-sans play-now-button launchGame');
-	
+
 	for(var i=0; i<gamebtn.length; ++i)
 	{
 		if(gamebtn[i].innerHTML.includes("立即游戏"))
@@ -31,32 +31,36 @@
 			gamebtn[i].click();
 		}
 	}
-	
-	await sleep(15000);
-	
+
+	await sleep(17000);
+
 	GM_openInTab("http://lobbyidn.com//lobby.php?lang=en");
 	GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
-	
+
 	self.close();
 })();
 
 async function GetBalance()
 {
 	UpdateBalance();
-	await sleep(4000);
-	
+	await sleep(10000);
+
 	var balance = document.getElementsByClassName('totalWallet initAfterMount');
-	
+    if(balance.length < 1)
+    {
+    balance = document.getElementsByClassName('totalWallet ');
+    }
 	for(var i=0; i<3; ++i)
 	{
 		var str = balance[0].innerText;
-		
-		if(str.includes("¥"))
+
+		if(!str.includes("Loading"))
 		{
+            		str +='¥';
 			GM_setClipboard(str, "text");
 			break;
 		}
-		
+
 		await sleep(2000);
 	}
 }
