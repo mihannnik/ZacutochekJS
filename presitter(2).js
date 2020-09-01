@@ -9,7 +9,8 @@
 
 // @match        shenpoker.com/deposit
 
-// @grant        shenpoker.com/game/idnpoker
+// @grant        https://shenpoker.com/game/idnpoker
+// @grant        http://shenpoker.com/game/idnpoker
 // @grant        GM_openInTab
 // @grant        window.close
 
