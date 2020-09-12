@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         IPTest
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://2ip.ru/
 // @grant        GM_openInTab
 // @grant        window.close
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
@@ -23,10 +24,4 @@
         location.reload();
     }
     self.close();
-    self.close();
-    self.close();
-    self.close();
-    self.close();
-
-
 })();
