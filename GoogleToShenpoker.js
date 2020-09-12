@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         GoogleToShenpoker
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://in.yahoo.com/?p=us
+// @match        https://www.yahoo.com/
 // @grant        GM_openInTab
 // @grant        window.close
 // ==/UserScript==
