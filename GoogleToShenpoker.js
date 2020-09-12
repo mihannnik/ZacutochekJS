@@ -4,7 +4,7 @@
 // @version      1
 // @description  try to take over the world!
 // @author       You
-// @match        https://google.com/
+// @match        https://in.yahoo.com/?p=us
 // @grant        GM_openInTab
 // @grant        window.close
 // ==/UserScript==
