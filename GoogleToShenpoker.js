@@ -14,5 +14,8 @@
     'use strict';
     GM_openInTab("https://shenpoker.com/cn",'active');
     self.close();
-
+    self.close();
+    self.close();
+    self.close();
+    self.close();
 })();
