@@ -12,11 +12,21 @@
 (function() {
     'use strict';
 
-    var elem = document.getElementById("d_clip_button").children[0];
+        var elem = document.getElementById("d_clip_button").children[0];
     if(elem.innerText == "")
     {
-    GM_openInTab("https://google.com/",'active');
+        GM_openInTab("https://yahoo.com/");
         self.close();
     }
+    else if(elem.innerText == "217.8.127.18")
+    {
+        location.reload();
+    }
+    self.close();
+    self.close();
+    self.close();
+    self.close();
+    self.close();
+
 
 })();
