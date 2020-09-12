@@ -8,14 +8,11 @@
 // @match        https://www.yahoo.com/
 // @grant        GM_openInTab
 // @grant        window.close
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
     'use strict';
     GM_openInTab("https://shenpoker.com/cn",'active');
-    self.close();
-    self.close();
-    self.close();
-    self.close();
     self.close();
 })();
