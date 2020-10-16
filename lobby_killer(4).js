@@ -21,7 +21,7 @@
 (async function()
 {
 	'use strict';
-	
+
 	await SelfClose();
 })();
 

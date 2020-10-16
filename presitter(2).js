@@ -26,11 +26,11 @@
 (async function()
 {
 	'use strict';
-	
+
 	GM_openInTab("http://shenpoker.com/game/idnpoker", 'active');
-	
+
 	await Sleep(200);
-	
+
 	await SelfClose();
 })();
 

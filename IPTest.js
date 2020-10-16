@@ -24,16 +24,16 @@ var PassIp = "";
 
 (async function()
 {
-    'use strict';
-	
-    var elem = document.getElementById("ip");
-	
-    if(elem.innerText == PassIp)
-    {
-        GM_openInTab("https://duckduckgo.com/");        
+	'use strict';
+
+	var elem = document.getElementById("ip");
+
+	if(elem.innerText == PassIp)
+	{
+		GM_openInTab("https://duckduckgo.com/");        
 		await SelfClose();
-    }
-    else
+	}
+	else
 	{
 		if(elem.innerText == "217.8.127.18")
 		{
@@ -41,13 +41,13 @@ var PassIp = "";
 			location.reload();
 		}
 	}
-	
-    SelfClose();
+
+	SelfClose();
 })();
 
 function Sleep(ms)
 {
-    return new Promise(resolve => setTimeout(resolve, ms));
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function SelfClose()

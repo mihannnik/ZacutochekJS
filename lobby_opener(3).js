@@ -24,13 +24,13 @@
 (async function()
 {
 	'use strict';
-	
-	await Sleep(3000);
-	
-	await GetBalance();
-	
-	var gamebtn = document.getElementsByClassName('open-sans play-now-button launchGame');
 
+	await Sleep(3000);
+
+	await GetBalance();
+
+	var gamebtn = document.getElementsByClassName('open-sans play-now-button launchGame');
+	
 	for(var i=0; i<gamebtn.length; ++i)
 	{
 		if(gamebtn[i].innerHTML.includes("立即游戏"))
@@ -38,39 +38,39 @@
 			gamebtn[i].click();
 		}
 	}
-	
+
 	await Sleep(17000);
-	
+
 	await GM_openInTab("http://lobbyidn.com//lobby.php?lang=en", 'active');
 	await GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");
-	
+
 	await SelfClose();
 })();
 
 async function GetBalance()
 {
 	UpdateBalance();
-	
+
 	await Sleep(10000);
-	
+
 	var balance = document.getElementsByClassName('totalWallet initAfterMount');
-	
+
 	if(balance.length < 1)
-    {
+	{
 		balance = document.getElementsByClassName('totalWallet ');
-    }
+	}
 	
 	for(var i=0; i<3; ++i)
 	{
 		var str = balance[0].innerText;
-		
+
 		if(!str.includes("Loading"))
 		{
-            str +='¥';
+			str +='¥';
 			GM_setClipboard(str, "text");
 			break;
 		}
-		
+
 		await Sleep(2000);
 	}
 }
@@ -78,7 +78,7 @@ async function GetBalance()
 function UpdateBalance()
 {
 	var refreshBtn = document.getElementsByClassName('refreshBalance lazy');
-	
+
 	refreshBtn[0].click();
 }
 

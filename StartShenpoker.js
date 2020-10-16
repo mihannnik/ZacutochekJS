@@ -23,16 +23,16 @@
 
 (async function()
 {
-    'use strict';
+	'use strict';
 
-    GM_openInTab("https://shenpoker.com/cn", 'active');
+	GM_openInTab("https://shenpoker.com/cn", 'active');
 
-    await SelfClose();
+	await SelfClose();
 })();
 
 function Sleep(ms)
 {
-    return new Promise(resolve => setTimeout(resolve, ms));
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function SelfClose()

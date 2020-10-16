@@ -31,7 +31,7 @@ var Sits = 9;
 	'use strict';
 
 	while(true)
-    {
+	{
 		await Sleep(5000);
 		SetSize();
 		await Sleep(5000);
@@ -72,7 +72,7 @@ function GetTable()
 				}
 			}
 		}
-		
+
 		return false;
 	}
 }
