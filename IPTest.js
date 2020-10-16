@@ -2,7 +2,7 @@
 
 // @name         IPTest
 // @namespace    http://tampermonkey.net/
-// @version      3.4
+// @version      3.5
 
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/IPTest.js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/IPTest.js#bypass=true
