@@ -39,7 +39,7 @@
 		}
 	}
 
-	await Sleep(17000);
+	await Sleep(18000);
 
 	await GM_openInTab("http://lobbyidn.com//lobby.php?lang=en", 'active');
 	await GM_openInTab("https://lobbyidn.com//lobby.php?lang=en");

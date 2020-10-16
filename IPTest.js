@@ -20,7 +20,7 @@
 
 // ==/UserScript==
 
-var PassIp = "";
+var ProxyIP = "";
 
 (async function()
 {
@@ -28,9 +28,9 @@ var PassIp = "";
 
 	var elem = document.getElementById("ip");
 
-	if(elem.innerText == PassIp)
+	if(elem.innerText == ProxyIP)
 	{
-		GM_openInTab("https://duckduckgo.com/");        
+		GM_openInTab("https://duckduckgo.com/");
 		await SelfClose();
 	}
 	else
