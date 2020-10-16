@@ -60,7 +60,7 @@ function ClickLogin()
 	var loginbtn = document.getElementsByClassName('bg-login');
 
 	for(var j=0; j<loginbtn.length; ++j)
-    {
+	{
 		loginbtn[j].click();
 	}
 }
