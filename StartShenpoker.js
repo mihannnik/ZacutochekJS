@@ -5,6 +5,9 @@
 // @namespace    http://tampermonkey.net/
 // @version      3.4
 
+// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/StartShenpoker.js#bypass=true
+// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/StartShenpoker.js#bypass=true
+
 // @match        https://www.duckduckgo.com/
 // @match        http://www.duckduckgo.com/
 
