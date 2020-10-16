@@ -3,7 +3,7 @@
 // @name         StartShenpoker
 
 // @namespace    http://tampermonkey.net/
-// @version      3.4
+// @version      3.5
 
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/StartShenpoker.js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/StartShenpoker.js#bypass=true
