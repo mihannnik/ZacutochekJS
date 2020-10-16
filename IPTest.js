@@ -4,6 +4,9 @@
 // @namespace    http://tampermonkey.net/
 // @version      3.4
 
+// @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/IPTest.js#bypass=true
+// @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/IPTest.js#bypass=true
+
 // @match        https://www.myip.com/
 // @match        http://www.myip.com/
 
