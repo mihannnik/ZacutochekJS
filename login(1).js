@@ -2,15 +2,23 @@
 
 // @name         IDNLogIn(1)
 // @namespace    http://tampermonkey.net/
-// @version      3.3
+// @version      3.5
 
 // @match        shenpoker.com/
+// @match        www.shenpoker.com/
+
+// @match        https://shenpoker.com/
+// @match        http://shenpoker.com/
+
+// @match        https://www.shenpoker.com/
+// @match        http://www.shenpoker.com/
 
 // @grant        shenpoker.com/deposit
-// @grant        window.close
+
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_openInTab
+// @grant        window.close
 
 // @exclude      shenpoker.com/message*
 

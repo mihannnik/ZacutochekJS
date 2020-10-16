@@ -2,16 +2,16 @@
 
 // @name         IDN sitter(5)
 // @namespace    http://tampermonkey.net/
-// @version      3.3
+// @version      3.5
 
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
 
-// @match        http://lobbyidn.com//lobby.php*
 // @match        https://lobbyidn.com//lobby.php*
+// @match        http://lobbyidn.com//lobby.php*
 // @match        www.lobbyidn.com//lobby.php*
+// @match        lobbyidn.com//lobby.php*
 
-// @grant        none
 // @grant        GM_setValue
 // @grant        GM_getValue
 
@@ -32,13 +32,13 @@ var Sits = 9;
 
 	while(true)
     {
-		await sleep(5000);
+		await Sleep(5000);
 		SetSize();
-		await sleep(5000);
+		await Sleep(5000);
 
 		if(GetTable() == false)
 		{
-			await sleep(10000);
+			await Sleep(10000);
 			var ReloadButton = document.getElementById("refresh");
 			ReloadButton.click();
 		}
@@ -82,13 +82,13 @@ async function SetSize()
 	var xresult = document.evaluate("//*[text()='" + Size + "']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
 	xresult.singleNodeValue.click();
 
-	await sleep(1500);
+	await Sleep(1500);
 
 	xresult = document.evaluate("//*[text()='Player']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
 	xresult.singleNodeValue.click();
 }
 
-function sleep(ms)
+function Sleep(ms)
 {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
