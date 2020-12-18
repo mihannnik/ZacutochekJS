@@ -25,6 +25,10 @@ var Limit1 = "20K";
 var Limit2 = "20K";
 
 var Sits = 9;
+var SitsMin = 4;
+
+//var Sits = 6;
+//var SitsMin = 2;
 
 (async function()
 {
@@ -63,7 +67,7 @@ function GetTable()
 				{
 					if(table.rows[i].cells[4].innerText[2] == Sits)
 					{
-						if(table.rows[i].cells[4].innerText[0] > 4 && table.rows[i].cells[4].innerText[0] < Sits)
+						if(table.rows[i].cells[4].innerText[0] > SitsMin && table.rows[i].cells[4].innerText[0] < Sits)
 						{
 							table.rows[i].cells[5].firstChild.click();
 							return true;
