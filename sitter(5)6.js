@@ -24,11 +24,11 @@ var Size = "SMALL";
 var Limit1 = "20K";
 var Limit2 = "20K";
 
-var Sits = 9;
-var SitsMin = 4;
+//var Sits = 9;
+//var SitsMin = 4;
 
-//var Sits = 6;
-//var SitsMin = 2;
+var Sits = 6;
+var SitsMin = 2;
 
 (async function()
 {
