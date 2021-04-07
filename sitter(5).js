@@ -2,7 +2,7 @@
 
 // @name         IDN sitter(5)
 // @namespace    http://tampermonkey.net/
-// @version      3.5
+// @version      3.6
 
 // @updateURL    https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
 // @downloadURL  https://raw.githubusercontent.com/mihannnik/ZacutochekJS/master/sitter(5).js#bypass=true
@@ -25,10 +25,6 @@ var Limit1 = "20K";
 var Limit2 = "20K";
 
 var Sits = 9;
-var SitsMin = 4;
-
-//var Sits = 6;
-//var SitsMin = 2;
 
 (async function()
 {
@@ -36,6 +32,8 @@ var SitsMin = 4;
 
 	while(true)
 	{
+        await Sleep(5000);
+        GoPoker();
 		await Sleep(5000);
 		SetSize();
 		await Sleep(5000);
@@ -67,7 +65,7 @@ function GetTable()
 				{
 					if(table.rows[i].cells[4].innerText[2] == Sits)
 					{
-						if(table.rows[i].cells[4].innerText[0] > SitsMin && table.rows[i].cells[4].innerText[0] < Sits)
+						if(table.rows[i].cells[4].innerText[0] > 4 && table.rows[i].cells[4].innerText[0] < Sits)
 						{
 							table.rows[i].cells[5].firstChild.click();
 							return true;
@@ -97,3 +95,7 @@ function Sleep(ms)
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function GoPoker()
+{
+    document.getElementById("game-TXH").click();
+}
